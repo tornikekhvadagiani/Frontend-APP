@@ -4,7 +4,7 @@ function App() {
   
 
   return (
-    <div>fronted app</div>
+    <div>fronted-app</div>
   )
 }
 
