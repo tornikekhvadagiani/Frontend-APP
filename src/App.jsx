@@ -1,10 +1,11 @@
 import './App.css'
+import Api from './services/api'
 
 function App() {
   
 
   return (
-    <div>fronted-app</div>
+    <Api/>
   )
 }
 
