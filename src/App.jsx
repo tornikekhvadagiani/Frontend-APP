@@ -21,7 +21,7 @@ function App() {
         </NavLinks>
       </Navbar>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage /> } />
         <Route path="/coffee" element={<CoffeePage />} />
         <Route path="/ingredients" element={<IngredientPage />} />
         <Route path="*" element={<NotFoundPage />} />

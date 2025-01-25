@@ -1,5 +1,6 @@
 // CoffeePage.jsx
 
+import CoffeApi from '../services/CoffeApi';
 import { CoffeePageWrapper, Title, CoffeeList, CoffeeItem } from '../styles/CoffeePageStyles';
 
 const CoffeePage = () => {
@@ -7,9 +8,7 @@ const CoffeePage = () => {
     <CoffeePageWrapper>
       <Title>Coffee Menu</Title>
       <CoffeeList>
-        <CoffeeItem>Coffee 1</CoffeeItem>
-        <CoffeeItem>Coffee 2</CoffeeItem>
-        <CoffeeItem>Coffee 3</CoffeeItem>
+        <CoffeeItem><CoffeApi/></CoffeeItem>
       </CoffeeList>
     </CoffeePageWrapper>
   );
