@@ -26,7 +26,7 @@ export const NavLink = styled.li`
     transition: color 0.3s ease;
 
     &:hover {
-      color: #ffa726; /* Beautiful orange hover effect */
+      color: #ffa726;
     }
   }
 `;

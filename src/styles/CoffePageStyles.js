@@ -1,46 +1,50 @@
+import styled from "styled-components";
+import coffeeImage from "../image/coffe.jpg";
 
-import styled from 'styled-components';
-import coffeeImage from '../image/coffe.jpg';
-
-export const HomePageWrapper = styled.div`
+export const CoffeePageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #f8f9fa;
   color: #333;
 `;
 
 export const Heading = styled.h1`
-  font-size: 2.5rem; 
-  font-weight: bold; 
-  color: #333; 
-  text-align: center; 
-  margin-top: 5rem; 
-  margin-bottom: 0.5rem; 
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
-  background: linear-gradient(90deg, #ff7e5f, #feb47b); 
-  -webkit-background-clip: text; 
-  -webkit-text-fill-color: transparent; 
-`;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-top: 2rem; /* 5rem-ს მცირე */
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   /* Responsivობა */
+  @media () {
+  }
 
+  @media (max-width: 360px) {
+    font-size: 1.2rem
+  }
+`;
 
 export const Paragraph = styled.p`
-  font-size: 1.2rem; 
-  color: #555; 
-  line-height: 1.6; 
-  text-align: center; 
-  margin: 0 auto; 
-  margin-top: 8.5rem; 
-  max-width: 600px; 
-  padding: 0 1rem;  
-  font-family: 'Arial', sans-serif; 
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 8.5rem;
+  max-width: 600px;
+  padding: 0 1rem;
+  font-family: "Arial", sans-serif;
 `;
 
-
-export const HomeImageBackground = styled.div`
- width: 100%;
+export const CoffeeImageBackground = styled.div`
+  width: 100%;
   height: 80%;
   background-image: url(${coffeeImage});
   background-size: cover;
@@ -48,11 +52,23 @@ export const HomeImageBackground = styled.div`
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
+
+  /* Responsivობა */
+  @media (max-width: 768px) {
+    height: 50%;
+  }
+
+  @media (max-width: 360px) {
+    height: 40%;
+  }
 `;
 
 export const TitleTopProducts = styled.h1`
-color: black;
-`
+  color: black;
+  @media (max-width: 360px) {
+    font-size: 1.5rem;
+  }
+`;
 
 //TopCoffeproducts
 
@@ -70,7 +86,7 @@ export const CoffeeCard = styled.div`
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: center;
-  width: 250px; /* ბარათის ფიქსირებული სიგანე */
+  width: 250px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
@@ -105,12 +121,12 @@ export const BuyButton = styled.button`
   background-color: #ffa726;
   color: white;
   font-size: 1rem;
-  padding: 0.5rem 1rem;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-
+  width: 60px;
+  padding: 10px 0px;
   &:hover {
     background-color: #fb8c00;
   }
@@ -119,10 +135,11 @@ export const BuyButton = styled.button`
 //footer
 
 export const Footer = styled.footer`
-  background-color: #2c2c2c; /* მუქი ფონი */
+  background-color: #2c2c2c;
   color: #fff;
   padding: 2rem 1rem;
   text-align: center;
+  width: 100%;
 `;
 
 export const FooterDescription = styled.p`
@@ -138,13 +155,13 @@ export const SocialIcons = styled.div`
   margin-bottom: 1rem;
 
   img {
-    width: 32px; /* აიქონის ზომა */
+    width: 32px;
     height: 32px;
     cursor: pointer;
     transition: transform 0.3s;
 
     &:hover {
-      transform: scale(1.2); /* ჰოვერის ეფექტი */
+      transform: scale(1.2);
     }
   }
 `;
