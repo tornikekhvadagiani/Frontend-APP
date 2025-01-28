@@ -6,8 +6,7 @@ const Header = () => {
   return (
     <Navbar>
       <NavLinks>
-        <NavLink><Link to="/" style={{ color: 'white', textDecoration: 'none' }}>Home</Link></NavLink>
-        <NavLink><Link to="/coffee" style={{ color: 'white', textDecoration: 'none' }}>Coffee</Link></NavLink>
+        <NavLink><Link to="/" style={{ color: 'white', textDecoration: 'none' }}>Coffee</Link></NavLink>
         <NavLink><Link to="/ingredients" style={{ color: 'white', textDecoration: 'none' }}>Ingredients</Link></NavLink>
       </NavLinks>
     </Navbar>
